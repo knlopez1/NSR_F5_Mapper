@@ -9,21 +9,20 @@ from scipy import interpolate
 from scipy.interpolate import UnivariateSpline
 import os
 
-dumb_variable_that_isnt_used = 6
-another_dumb_one=100
+dumb_variable_that_isnt_used = 7
 map_fold = "/Users/Krystyna/Desktop/"  # folder where the map data is located
 map_file = "simple_21x169_09.16.2020_15.28.34_MAP"
-map_loc = os.path.join(map_fold, map_file)
+map_loc = os.path.join(map_fold, map_file) 
 axisfile2d = "mastery1.txt"
 axisfile3d = "ContinuousAlphaMap9-16-2020.txt"
-mappath2d = os.path.join(map_loc, axisfile2d)
+mappath2d = os.path.join(map_loc, axisfile2d) 
 mappath3d = os.path.join(map_loc, axisfile3d)
 
 
 #Initializing arrays
 
 rawtimes2d = []
-#reltimes2d = [] don't actually need to define here
+#reltimes2d = [] don't actually need to define here 
 coords2d = []
 pTvals2d = []
 pTstdevs2d = []
@@ -65,7 +64,7 @@ with open(mappath3d) as mp:
 	i = 0
 	for line in mp:
 		elmt = line.split(",")
-
+		
 		dandt = elmt[0]
 		dandt = dandt.split(" ")
 		month_name = dandt[1]
@@ -84,7 +83,7 @@ with open(mappath3d) as mp:
 
 		rawtimes3d.append(time3d)
 		Bx3d.append(Bvalx)
-		By3d.append(Bvaly)
+		By3d.append(Bvaly)		
 		Bz3d.append(Bvalz)
 		Bmod3d.append(Bvalmod)
 
