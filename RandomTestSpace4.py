@@ -9,6 +9,7 @@ from scipy import interpolate
 from scipy.interpolate import UnivariateSpline
 import os
 
+dumb_variable_that_isnt_used = 7
 map_fold = "/Users/Krystyna/Desktop/"  # folder where the map data is located
 map_file = "simple_21x169_09.16.2020_15.28.34_MAP"
 map_loc = os.path.join(map_fold, map_file) 
